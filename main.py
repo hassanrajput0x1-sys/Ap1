@@ -18,8 +18,8 @@ approved_users = set()
 pending_requests = set()
 
 # Admin credentials
-ADMIN_USERNAME = 'Blinder'
-ADMIN_PASSWORD = 'Rulex'
+ADMIN_USERNAME = 'USERNAME'
+ADMIN_PASSWORD = 'PASSWORD'
 
 # ----------------- Running Tasks -----------------
 running_tasks = {}  
@@ -355,5 +355,6 @@ if __name__ == '__main__':
     # Start self-ping thread
     ping_thread = Thread(target=self_ping, daemon=True)
     ping_thread.start()
+
 
     app.run(host='0.0.0.0', port=10000)
